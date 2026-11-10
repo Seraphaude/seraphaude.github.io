@@ -23,6 +23,14 @@ plugins:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/share.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Seraphaude
+      path: ""
       type: posts
     values:
       author: Seraphaude
