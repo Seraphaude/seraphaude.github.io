@@ -1,0 +1,8 @@
+{%- assign s = include.status | downcase -%}
+{%- if s == "conjecture" -%}
+<span class="status status-conjecture" title="猜想：初步構想，尚待論證">Conjecture</span>
+{%- elsif s == "lemma" -%}
+<span class="status status-lemma" title="引理：局部已成，全篇未竟">Lemma</span>
+{%- elsif s == "theorem" -%}
+<span class="status status-theorem" title="定理：大致完成">Theorem</span>
+{%- endif -%}

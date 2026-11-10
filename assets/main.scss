@@ -91,3 +91,21 @@ blockquote {
 .page-content hr::after {
   content: "◇　◇　◇";
 }
+
+/* ── 完成度標記（Conjecture／Lemma／Theorem） ── */
+.status {
+  display: inline-block;
+  margin-left: 0.6em;
+  padding: 0 0.45em;
+  font-family: $font-song;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+  cursor: help;
+}
+.status-conjecture { color: #828282; border: 1px dashed #b0a99a; }
+.status-lemma      { color: #8b2e2b; border: 1px solid #8b2e2b; }
+.status-theorem    { color: #fbf8f1; background: #8b2e2b; border: 1px solid #8b2e2b; }

@@ -5,5 +5,5 @@ permalink: /ius/
 ---
 
 {% for post in site.categories.ius %}
-- {{ post.date | date: site.minima.date_format }}　[{{ post.title }}]({{ post.url | relative_url }})
+- {{ post.date | date: site.minima.date_format }}　[{{ post.title }}]({{ post.url | relative_url }}) {% include status.html status=post.status %}
 {% endfor %}

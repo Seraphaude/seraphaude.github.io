@@ -9,7 +9,7 @@ permalink: /tags/
 <h3>{{ tag[0] }}</h3>
 <ul>
 {% for post in tag[1] %}
-<li>{{ post.date | date: site.minima.date_format }}　<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+<li>{{ post.date | date: site.minima.date_format }}　<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% include status.html status=post.status %}</li>
 {% endfor %}
 </ul>
 {% endfor %}
