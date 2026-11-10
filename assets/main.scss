@@ -5,6 +5,9 @@
 
 @import "minima";
 
+$brand-color: #8b2e2b;        /* 連結顏色改成暗朱紅 */
+$background-color: #fbf8f1;   /* 底色改成米白，近似宣紙 */
+
 /* ── 字型 ── */
 $font-song: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
 $font-kai:  "LXGW WenKai TC", "Kaiti TC", "DFKai-SB", serif;
@@ -54,4 +57,37 @@ blockquote {
 .site-nav .page-link[href$="/tags/"] {
   font-size: 0.9em;
   color: #828282;
+}
+
+/* 頁首頂端那條灰線改成朱紅 */
+.site-header {
+  border-top: 4px solid #8b2e2b;
+}
+
+/* 網站名稱旁加一枚直式小印章 */
+.site-title::after {
+  content: "有心";
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 2px;
+  writing-mode: vertical-rl;
+  font-family: $font-kai;
+  font-size: 13px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: #b22c22;
+  border: 2px solid #b22c22;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+/* 文中的分隔線（你在〈弁言〉用的 * * *）改成菱形點綴 */
+.page-content hr {
+  border: 0;
+  margin: 2em 0;
+  text-align: center;
+  color: #b0a99a;
+}
+.page-content hr::after {
+  content: "◇　◇　◇";
 }
