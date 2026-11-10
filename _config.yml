@@ -30,7 +30,3 @@ defaults:
       type: posts
     values:
       author: Seraphaude
-      path: ""
-      type: posts
-    values:
-      author: Seraphaude
