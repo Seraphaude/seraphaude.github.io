@@ -63,13 +63,19 @@ blockquote {
   border-top: 4px solid #8b2e2b;
 }
 
-/* 網站名稱旁加一枚直式小印章 */
+/* 網站名稱旁加一枚直式小印章
+   不用 writing-mode 直排：iOS 的 WebKit 會把直排方塊的寬度算錯，
+   導致印章被擠到下一行。改用換行符號 \A 讓兩個字上下排列，外觀相同。 */
+.site-title {
+  white-space: nowrap;
+}
 .site-title::after {
-  content: "丙午";
+  content: "丙\A午";
+  white-space: pre;
+  text-align: center;
   display: inline-block;
   margin-left: 10px;
   padding: 3px 2px;
-  writing-mode: vertical-rl;
   font-family: $font-kai;
   font-size: 13px;
   line-height: 1.1;
