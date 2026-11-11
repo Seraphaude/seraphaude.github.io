@@ -3,6 +3,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&family=LXGW+WenKai+TC&display=swap");
 
+$brand-color: #000000;        /* 連結顏色改成純黑 */
+
 @import "minima";
 
 /* ── 字型 ── */
@@ -72,8 +74,8 @@ blockquote {
   font-size: 13px;
   line-height: 1.1;
   letter-spacing: 0;
-  color: #b22c22;
-  border: 2px solid #b22c22;
+  color: #87251F;
+  border: 2px solid #87251F;
   border-radius: 3px;
   vertical-align: middle;
 }
